@@ -1,117 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <script></script>
-  <style>
-    .signature-container{
-      width: 550px;
-      background-color: white;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .signature-card {
-      padding: 15px 10px 0 10px;
-      color: black;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Slabo+27px&display=swap" rel="stylesheet">
+    <style>
+      .signature-container{
+        width: 650px;
+        background-color: white;
+        font-family: "Slabo 27px", serif;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 2px;
+      }
 
-    hr { 
-      background-color: #522e91; 
-      height: 2px; 
-      border: 0; 
-      margin: 5px 0 8px 0;
-      opacity: 1;
-    }
+      .signature-card {
+        color: black;
+        display: flex;
+        flex-direction: row;
+      }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      hr { 
+        background-color: #4f3b91; 
+        height: 2px; 
+        border: 0; 
+        margin: 5px 0 8px 0;
+        opacity: 1;
+        width: 100%;
+      }
 
-    .logo-image{
-      height: 85px;
-    }
+      .logo-container {
+        width: 40%;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-    .name{
-      font-size: 27px;
-    }
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #4f3b91; 
+        border-radius: 100%;
+        width: 125px;
+        height: 125px;
+        padding-left: 5px;
+      }
 
-    .title{
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 1.5px;
-    }
+      .logo-image{
+        height: 85px;
+      }
 
-    .info {
-      font-size: 12px;
-    }
+      .name{
+        font-size: 27px;
+        margin-bottom: 5px;
+      }
 
-    .info-item {
-      margin-bottom: 5px;
-      color: #3a3a3a;
-      text-transform: uppercase;
-      letter-spacing: .8px;
-    }
+      .title{
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 4px;
+        margin-bottom: 8px;
+      }
 
-    .signature-icon {
-      color: #522e91;
-      margin-right: 5px;
-    }
+      .info {
+        width: 60%;
+        font-size: 12px;
+        margin-left: 15px;
+      }
 
-    .bottom-icon{
-      position: relative;
-      width: 50%;
-      background-color: #522e91;
-      height: 15px;
-      font-size: 12px;
-      text-align: left;
-      padding: 5px;
-      color: white;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+      .info-item {
+        margin-top: 10px;
+        color: #3a3a3a;
+        text-transform: uppercase;
 
-    .bottom-icon:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 35px 25px;
-      border-color: transparent transparent white transparent;
-    }
-    
-  </style>
-</head>
+      }
+
+      .signature-icon {
+        color: #4f3b91;
+        margin-right: 5px;
+      }
+
+      .ribbon {
+        margin-top: 5px;
+        width: 100%;
+        background-color: #4f3b91;
+        height: 10px;
+        font-size: 8px;
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        --s: 15px; /* the ribbon size */
+        --d: 5px; /* the depth */
+        --c: 5px; /* the cutout part */
+        --p: 5px;
+        /* update one variable a time and you will understand what it does */
+        color: white;
+        padding: 0 calc(var(--s) + var(--d) +var(--d)) var(--d);
+        background:
+          conic-gradient(at left  var(--s) bottom var(--d), #0000 25%,#0008 0 37.5%,#0004 62.5%) 0   /50% no-repeat,
+          conic-gradient(at right var(--s) bottom var(--d),#0004 62.5%,#0008 0 75%,#0000 0) 100%/50% no-repeat;
+        clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+        background-color: #4f3b91; 
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
   <body>
     <div class="signature-container">
       <div class="signature-card">
-      <div class="logo">
-        <img alt="Lodi USD primary logo in full color" 
-        class="logo-image" 
-        src="https://resources.finalsite.net/images/v1678832206/lodiusdnet/tsgdroyguizhd3gvipte/Lodi_USD_Logo_FULL.svg">
+        <div class="logo-container">
+          <div class="logo">
+              <img alt="Lodi USD primary logo in full color" 
+              class="logo-image" 
+              src="https://www.lodiusd.net/fs/resource-manager/view/7172b6f0-40e1-4e89-8638-7aeaa0bc4712">
+        </div>
+        <div class="ribbon">Educating Students for Success</div>
       </div>
       <div class="info">
-        <div class="name">John Doe</div>
-        <div class="title">Superintendent</div>
+        <div class="name">John Doeseph Johnson-Banjonie</div>
+        <div class="title">Resource Specialist SP ED TCH</div>
         <hr/>
         <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-phone"></i></span> (555) 555-7000</div>
-        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-envelope"></i></span> jdoe@email.net</div>
-        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-globe"></i></span> www.school.net</div>
-        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-location-dot"></i></span> 1305 E. Vine St., Lodi, Ca 95240</div>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-envelope"></i></span> jdoesephjohnsonbanjonie@lodiusd.net</div>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-globe"></i></span> https://superlongschoolname.lodiusd.net</div>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-location-dot"></i></span> 9999 Donald D. Duck Way, Stockton, CA 95210</div>
       </div>
       </div>
-      <div class="bottom-icon">Educating Students for Success</div>
     </div>
   </body>
 </html>
-
-
 
 
