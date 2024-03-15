@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <script></script>
+  <style>
+    .signature-container{
+      width: 550px;
+      background-color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .signature-card {
+      padding: 15px 10px 0 10px;
+      color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    hr { 
+      background-color: #522e91; 
+      height: 2px; 
+      border: 0; 
+      margin: 5px 0 8px 0;
+      opacity: 1;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-image{
+      height: 85px;
+    }
+
+    .name{
+      font-size: 27px;
+    }
+
+    .title{
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+    }
+
+    .info {
+      font-size: 12px;
+    }
+
+    .info-item {
+      margin-bottom: 5px;
+      color: #3a3a3a;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+
+    .signature-icon {
+      color: #522e91;
+      margin-right: 5px;
+    }
+
+    .bottom-icon{
+      position: relative;
+      width: 50%;
+      background-color: #522e91;
+      height: 15px;
+      font-size: 12px;
+      text-align: left;
+      padding: 5px;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .bottom-icon:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 35px 25px;
+      border-color: transparent transparent white transparent;
+    }
+    
+  </style>
+</head>
+  <body>
+    <div class="signature-container">
+      <div class="signature-card">
+      <div class="logo">
+        <img alt="Lodi USD primary logo in full color" 
+        class="logo-image" 
+        src="https://resources.finalsite.net/images/v1678832206/lodiusdnet/tsgdroyguizhd3gvipte/Lodi_USD_Logo_FULL.svg">
+      </div>
+      <div class="info">
+        <div class="name">John Doe</div>
+        <div class="title">Superintendent</div>
+        <hr/>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-phone"></i></span> (555) 555-7000</div>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-envelope"></i></span> jdoe@email.net</div>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-globe"></i></span> www.school.net</div>
+        <div class="info-item"><span class="signature-icon"><i class="fa-solid fa-location-dot"></i></span> 1305 E. Vine St., Lodi, Ca 95240</div>
+      </div>
+      </div>
+      <div class="bottom-icon">Educating Students for Success</div>
+    </div>
+  </body>
+</html>
+
+
+
+
