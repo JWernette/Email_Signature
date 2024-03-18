@@ -4,14 +4,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <style>
 
-      table {
+      table.lusd-signature {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
       }
 
-      hr { 
+      hr.lusd-hr { 
         background-color: #4f3b91; 
-        height: 2px; 
+        height: 1px; 
         border: 0; 
         margin: 5px 0 5px 0;
         opacity: 1;
@@ -53,7 +53,7 @@
     </style>
   </head>
   <body>
-    <table>
+    <table class="lusd-signature">
       <tbody>
         <tr>
           <td style="text-align: center; vertical-align: middle;">
@@ -66,42 +66,47 @@
               <tbody>
                 <tr>
                   <td>
-                    <div class="name">John Doeseph Johnson-Banjonie</div>
+                    <div class="name"> %%FirstName%% %%LastName%% </div>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <div class="title">Resource Specialist SP ED TCH</div>
+                    <div class="title">%%Title%%</div>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <hr>
+                    <hr class="lusd-hr">
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-phone"></i></span> (555) 555-7000</div>
+                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-phone"></i></span> %%Phone%% </div>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-envelope"></i></span> jdoesephjohnsonbanjonie@lodiusd.net</div>
+                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-envelope"></i></span> %%WindowsEmailAddress%% </div>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-globe"></i></span> https://superlongschoolname.lodiusd.net</div>
+                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-globe"></i></span> www.lodiusd.net </div>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-location-dot"></i></span> 9999 Donald D. Duck Way, Stockton, CA 95210</div>
+                    <div class="info-item"><span class="info-icon"><i class="fa-solid fa-location-dot"></i></span> %%StreetAddress%%, %%City%%, %%state%% %%zipcode%% </div>
                   </td>
                 </tr>
               </tbody>
             </table>
           </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #4f3b91; text-align: center; color: white;">
+              Educating Students For Success
+            </td>
         </tr>
       </tbody>
     </table>
